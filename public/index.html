@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Whiteboard</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="whiteboard"></canvas>
+
+    <div class="tools">
+        <button id="pen" class="active">Pen</button>
+        <button id="eraser">Eraser</button>
+        <div class="tool-options">
+            <div class="size-control">
+                <label>Size: <span id="size-value">5</span>px</label>
+                <input type="range" id="tool-size" min="1" max="50" value="5">
+            </div>
+            <input type="color" id="color-picker" value="#000000">
+        </div>
+        <div class="shapes-container hidden" id="shapes-container">
+            <button data-shape="rectangle">Rectangle</button>
+            <button data-shape="circle">Circle</button>
+            <button data-shape="line">Line</button>
+        </div>
+        <button id="shapes">Shapes</button>
+        <button id="clear">Clear</button>
+        <button id="fill-tool" title="Fill Tool">
+            <!-- Paint bucket icon -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.53 8.53l-5.06-5.06a.75.75 0 00-1.06 0L8.47 5.41l1.41 1.41 1.53-1.53 4 4-6.72 6.72a2.5 2.5 0 103.54 3.54l6.9-6.9a2 2 0 000-2.83l-2-2zM5 8.5l2 2 1.5-1.5-2-2L5 8.5z"/>
+                <path d="M20.5 14.5c-.83 0-1.5.67-1.5 1.5 0 .58.51 1.49 1.03 2.18.23.31.69.31.92 0 .52-.69 1.05-1.6 1.05-2.18 0-.83-.67-1.5-1.5-1.5z"/>
+            </svg>
+        </button>
+        <a href="https://www.linkedin.com/in/anshs-dev/" target="_blank" class="linkedin-btn" id="made-by">
+            Made by Ansh
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 4px; vertical-align: middle;">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
