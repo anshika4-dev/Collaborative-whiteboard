@@ -93,8 +93,3 @@ This project is licensed under the MIT License – see the LICENSE.md file for d
 
 ---
 
-## 📧 Contact
-
-Ansh Soni  
-📩 Email: anshs.dev@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/anshs-dev
