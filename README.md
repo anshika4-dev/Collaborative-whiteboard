@@ -48,10 +48,10 @@ Follow these instructions to set up the project on your local machine.
 ### ⚙️ Installation
 
 1. Clone the repository
-   git clone https://github.com/your-username/your-repository-name.git
+   git clone https://github.com/anshika4-dev/Collaborative-whiteboard.git
 
 2. Navigate to the project directory
-   cd your-repository-name
+   cd Collaborative-whiteboard
 
 3. Install dependencies
    npm install
